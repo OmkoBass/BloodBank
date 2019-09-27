@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DonoriModelStoreContainer" CdmEntityContainer="DonoriEntities5">
+    <EntitySetMapping Name="Donors">
+      <EntityTypeMapping TypeName="DonoriModel.Donor">
+        <MappingFragment StoreEntitySet="Donor">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Ime" ColumnName="Ime" />
+          <ScalarProperty Name="Prezime" ColumnName="Prezime" />
+          <ScalarProperty Name="Godine" ColumnName="Godine" />
+          <ScalarProperty Name="Pol" ColumnName="Pol" />
+          <ScalarProperty Name="KrvnaGrupa" ColumnName="KrvnaGrupa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

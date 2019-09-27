@@ -1,0 +1,17 @@
+﻿<Window x:Class="BloodBank.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BloodBank"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top">
+            <Button Name="Register" Background="DarkRed" Content="Register New User" Foreground="White" Height="30" FontWeight="Bold" Click="Register_Click"/>
+            <Button Name="Find" Background="DarkRed" Content="Find by Blood Type" Foreground="White" Height="30" FontWeight="Bold" Click="Find_Click"/>
+            <Button Name="Refresh" Background="DarkRed" Content="Refresh" Foreground="White" Height="30" FontWeight="Bold" Click="Refresh_Click" ></Button>
+        </StackPanel>
+        <DataGrid Name="Data" ColumnWidth="*" IsReadOnly="True"/>
+    </DockPanel>
+</Window>

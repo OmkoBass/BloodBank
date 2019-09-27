@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DonoriModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Donor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ime" Type="nchar" MaxLength="16" />
+    <Property Name="Prezime" Type="nchar" MaxLength="32" />
+    <Property Name="Godine" Type="int" />
+    <Property Name="Pol" Type="bit" />
+    <Property Name="KrvnaGrupa" Type="int" />
+  </EntityType>
+  <EntityContainer Name="DonoriModelStoreContainer">
+    <EntitySet Name="Donor" EntityType="Self.Donor" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
